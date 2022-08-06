@@ -100,12 +100,12 @@ document.getElementById("total").innerHTML = `<svg xmlns="http://www.w3.org/2000
             </svg>`+ " $" + vistaTotal;
 }
 
-/*
+
 function borrarProducto (id){
     let seleccionado = productos.find((producto) => producto.id == id);
     carrito.splice(seleccionado);
 }
-*/
+
 
 pintarDatos();
 
