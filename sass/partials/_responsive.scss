@@ -1,0 +1,67 @@
+@media only screen and (max-width: 768px){
+    .footerFlex .d-flex{display: flex;flex-direction: column;
+    }
+    
+
+    .d-flex {
+        display: flex;
+    }
+    
+    .cardFlex{
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .cards__cardKit{
+        margin-top: 10px;
+    }
+
+    .cardInt{
+      margin-top: 10px;
+    }
+
+    .cardCompra{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .encabezado{
+        margin: 0px;
+    }
+
+    .h1{
+        margin-top: 5px;
+    }
+
+   .cards__categoria{
+       margin-top: 10px;
+       text-align: center;
+   }
+}
+
+
+
+
+    @media only screen and (min-width: 1024px){
+        .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+        .footerFlex{display: flex;justify-content: space-around;}
+
+        .d-flex {
+            display: flex;
+            flex-direction: row;
+        } 
+        
+        .h1{
+           margin: 50px;
+        }
+
+        .redes{
+           text-align: start;
+        }
+        
+        .productosGeneral{
+            margin: 50px;
+        }
+    }

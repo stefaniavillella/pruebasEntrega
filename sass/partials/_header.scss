@@ -1,0 +1,61 @@
+.header{
+    background-color: white;
+
+
+     &__navItem{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      color:#2973b4 !important;
+     }
+
+    &__navItem:hover{
+    color: #f87385 !important;
+    font-weight: bold;
+    }
+
+    &__active{
+        color:#943052 !important;
+    }
+
+    &__botonBusqueda{
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(-45deg, $coral, #f4a074, #2973b4, #104d82);
+        background-size: 800% 400%;
+        padding: 8px;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: white;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    }
+
+    &__botonBusqueda:hover{
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+    }
+
+    &__botonBusqueda:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+       }
+
+
+
+
+       @keyframes gradient {
+        0% {
+         background-position: 0% 50%;
+        }
+       
+        50% {
+         background-position: 100% 50%;
+        }
+       
+        100% {
+         background-position: 0% 50%;
+        }
+       }
+}

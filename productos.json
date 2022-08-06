@@ -1,0 +1,14 @@
+[
+    {"id":1, "categoria":"niñas", "nombre": "Nube Romántica", "precio": 500, "foto": "./img/productoNubes.jpg"},
+    {"id":2, "categoria":"niños", "nombre": "Trencito", "precio": 400, "foto": "./img/productoTren.jpg"},
+    {"id":3, "categoria":"niñas", "nombre": "Cola de Sirena", "precio": 550, "foto": "./img/productoSirenita.jpg"},
+    {"id":4, "categoria":"niños", "nombre": "Animales de la selva", "precio": 500, "foto": "./img/productoSelva.jpg"},
+    {"id":5, "categoria":"comunion", "nombre": "Estilo Rústico", "precio": 600, "foto": "./img/productoRustica.jpg"},
+    {"id":6, "categoria":"niñas", "nombre": "Muñecas LOL", "precio": 500, "foto": "./img/productoLol.jpg"},
+    {"id":7, "categoria":"comunion", "nombre": "Muñequito Bautismo", "precio": 500, "foto": "./img/productoComunionFran.jpg"},
+    {"id":8, "categoria":"bautismo", "nombre": "Ovejita romántica", "precio": 600, "foto": "./img/productoBautismoOveja.jpg"},
+    {"id":9, "categoria":"bautismo", "nombre": "Angelito guardián", "precio": 450, "foto": "./img/productoBautismoAngel.jpg"},
+    {"id":10, "categoria":"especial", "nombre": "Día del Padre Kraft", "precio": 600, "foto": "./img/productoPadreRustico.jpg"},
+    {"id":11, "categoria":"especial", "nombre": "San Valentín", "precio": 700, "foto": "./img/productoSanValentin.jpg"},
+    {"id":12, "categoria":"especial", "nombre": "Pascuas", "precio": 550, "foto": "./img/productoPascuas.jpg"}
+]

@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500&family=Roboto&family=Sansita+Swashed&display=swap");
+.header {
+  background-color: white;
+}
+
+.header__navItem {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #2973b4 !important;
+}
+
+.header__navItem:hover {
+  color: #f87385 !important;
+  font-weight: bold;
+}
+
+.header__active {
+  color: #943052 !important;
+}
+
+.header__botonBusqueda {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(-45deg, #f57272, #f4a074, #2973b4, #104d82);
+  background-size: 800% 400%;
+  padding: 8px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+          animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.header__botonBusqueda:hover {
+  -webkit-animation: gradient 3s infinite;
+          animation: gradient 3s infinite;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header__botonBusqueda:active {
+  -webkit-animation: gradient 3s infinite;
+          animation: gradient 3s infinite;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.h1 {
+  font-size: 1.5rem;
+}
+
+.h1__index {
+  color: #f57272;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.cards {
+  background-color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards__cardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #d4145a;
+}
+
+.cards__cardText {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.cards__botonCartas, .botonContacto {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(-45deg, #f57272, #f4a074, #2973b4, #104d82);
+  background-size: 800% 400%;
+  padding: 8px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+          animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.cards__botonCartas:hover, .botonContacto:hover {
+  -webkit-animation: gradient 3s infinite;
+          animation: gradient 3s infinite;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cards__botonCartas:active, .botonContacto:active {
+  -webkit-animation: gradient 3s infinite;
+          animation: gradient 3s infinite;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.cards__shadow {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards__shadow:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(159, 0, 233, 0.4);
+          box-shadow: 0 8px 16px 0 rgba(159, 0, 233, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cards__cardContacto {
+  background-color: #fff2f8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+
+.cards__cardKit {
+  text-align: center;
+}
+
+.botonContacto {
+  background-color: #f57272;
+}
+
+.botonContacto:hover {
+  background-color: #d4145a;
+}
+
+.producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.tarjeta {
+  background-color: #FFFFFF;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #fff3fa;
+  font-weight: bold;
+}
+
+.footer__black {
+  color: black;
+}
+
+.footer__black:hover {
+  color: #550b9b;
+}
+
+.footer__copy {
+  text-decoration: none;
+  color: #7a539e;
+}
+
+.footer__copy:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #a10a51;
+}
+
+.footer__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #33337e;
+}
+
+.footer__icon {
+  color: #f57272;
+}
+
+.icon--facebook {
+  color: #121296;
+}
+
+.icon--facebook:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.icon--instagram {
+  color: #d4145a;
+}
+
+.icon--instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.icon--pinterest {
+  color: #f71414;
+}
+
+.icon--pinterest:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.categorias {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.aList {
+  color: #9a5edd;
+  font-family: 'Lato', sans-serif;
+}
+
+.aList:hover {
+  color: #ca0a74;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f57272;
+}
+
+.red {
+  color: red;
+}
+
+.textForm {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.custom-select {
+  font-family: 'Lato', sans-serif;
+}
+
+.custom-select:hover {
+  background-color: #4636d4;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerFlex .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3rem;
+  }
+  .cards__cardKit {
+    margin-top: 10px;
+  }
+  .cardInt {
+    margin-top: 10px;
+  }
+  .cardCompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px;
+  }
+  .encabezado {
+    margin: 0px;
+  }
+  .h1 {
+    margin-top: 5px;
+  }
+  .cards__categoria {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footerFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .h1 {
+    margin: 50px;
+  }
+  .redes {
+    text-align: start;
+  }
+  .productosGeneral {
+    margin: 50px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

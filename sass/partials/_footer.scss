@@ -1,0 +1,54 @@
+.footer{
+    background-color: $rosaFooter;
+    font-weight: $titleFooter;
+
+    &__black{
+    color: black;
+    }
+
+    &__black:hover{
+    color: rgb(85, 11, 155);
+    }
+
+    &__copy{
+    text-decoration: none;
+    color: rgb(122, 83, 158);
+    }
+
+    &__copy:hover{
+    text-decoration-line: underline;
+    color: rgb(161, 10, 81);
+    }
+
+    &__title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #33337e;
+    }
+
+    &__icon{
+        color: $coral;
+    }
+}
+
+
+
+
+
+
+$redes: (
+    facebook: #121296,
+    instagram: #d4145a,
+    pinterest: #f71414,
+
+);
+
+@each $red, $valor in $redes {
+    .icon--#{$red} {
+        color: $valor;
+    }
+    .icon--#{$red}:hover {
+        transform: scale(1.2);
+    }
+}
