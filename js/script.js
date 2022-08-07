@@ -20,6 +20,9 @@ traerDatos();
 
 
 
+
+//PINTO DOM CON LAS CARDS QUE CONTIENEN DATOS DEL JSON
+
 function pintarDatos() {
     let cards = '';
     productos.forEach(function (producto) {
@@ -36,6 +39,10 @@ function pintarDatos() {
     });
     document.getElementById('card-container').innerHTML = cards;
 }
+
+
+
+
 
 //FILTRO POR CATEGORÍA LOS PRODUCTOS
 
@@ -86,7 +93,7 @@ const agregarAlCarrito = (id) => {
 <td>${seleccionado.nombre}</td>
 <td>$${seleccionado.precio}</td>
 <td>
-    <a href="#" id="borrar" class="fas fa-times-circle">X</a>
+    <a href="#" id="borrar" class="fas fa-times-circle">  </a>
 </td>
 </tr>
 <div>`;
@@ -102,8 +109,11 @@ document.getElementById("total").innerHTML = `<svg xmlns="http://www.w3.org/2000
 
 
 function borrarProducto (id){
-    let seleccionado = productos.find((producto) => producto.id == id);
-    carrito.splice(seleccionado);
+    let borrarlo = document.getElementById("borrar");
+    borrarlo.addEventListener('click', () => {
+        let seleccionado = productos.find((producto) => producto.id == id);
+    carrito.delete(seleccionado);
+    })
 }
 
 
@@ -138,11 +148,32 @@ cerrarPop.addEventListener('click', () => {
 
 
 
+//VALIDAR CUPÓN INGRESADO
+
+let btnValidar = document.getElementById("cupon");
+
+btnValidar.onclick = () =>{
+        const cuponSemanal = "dreamsweek";
+        const mensaje = document.getElementById("validacion");
+        const cuponIngresado = document.getElementById("cuponIngresado").value;
+        if (cuponIngresado === cuponSemanal) {
+            mensaje.innerHTML = `Cupón válido`
+        } else {
+            mensaje.innerHTML = `Cupón inválido, por favor intenta de nuevo`
+        }
+
+}
 
 
+//COMPRA REALIZADA
 
+let btnCompra = document.getElementById("btnPopComprar");
 
-
+btnCompra.onclick = () =>{
+        const mensajeCompra = document.getElementById("compraRealizada");
+        mensajeCompra.innerHTML = `Felicidades! Tu compra fue realizada con éxito`;
+        
+}
 
 
 
@@ -219,8 +250,4 @@ Toastify({
     } 
 }).showToast();
 */
-
-
-
-
 
